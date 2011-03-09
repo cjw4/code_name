@@ -1,6 +1,7 @@
 <h1>discGolf Score Manager</h1>
 
 <%= form_for(@scorecard) do |f| %>
+<span id="scorecardContainer">
 	<div id="frontNine">
 		<span class="holeInputLabel">1</span>
 		<span class="holeInputLabel">2</span>
@@ -46,12 +47,57 @@
 		<span><%= f.text_field :hole16, :class => "holeInput", :value => "3" %></span>
 		<span><%= f.text_field :hole17, :class => "holeInput", :value => "3" %></span>
 		<span><%= f.text_field :hole18, :class => "holeInput", :value => "3" %></span>
-		<%= f.text_field :score, :size => "2", :class => "totalInput", :value => "E" %>
-		<%= f.text_field :total, :size => "2", :class => "totalInput", :value => "54" %>
+		<%= f.text_field :score, :size => "2", :class => "totalInput", :value => "E", :readonly => "readonly" %>
+		<%= f.text_field :total, :size => "2", :class => "totalInput", :value => "54", :readonly => "readonly" %>
 	</div>	
 	</div><!-- end backNine div-->
 	
 	
 	<div><%= f.submit :class => "addScoreBtn", :value => "Log Score" %></div>
+</span><!-- end scorecardContainer div-->
 
 <% end  %>
+
+<span id="outputScoresContainer">
+
+	<h2>Your Scores</h2>
+
+<div>
+	<span class="dateOutputLabel">Date</span>
+	<span class="totalOutputLabel">Total</span>
+	<span class="proOutputLabel">Pro Tees?</span>
+</div>
+
+<% @scorecards.each do |scorecard| %>
+	<div id="showScores">
+		<span class="dateOutput">Date here</span>
+		<span class="totalOutput"><%= scorecard.score %></span>
+		<span class="totalOutput"><%= scorecard.total %></span>
+		<span class="proOutput"><%= scorecard.pro_tees %></span>
+	</div><!-- end showScores div -->
+</span><!-- end outputScoresContainer div-->
+<% end  %>	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

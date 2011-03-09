@@ -2,6 +2,24 @@
 	width:800px;
 	margin: 0 auto;
 }
+#scorecardContainer {
+	display:inline-block;
+	border:solid green;
+	width: 375px;
+	float:left;
+}
+#outputScoresContainer {
+	display:inline-block;
+	border:solid blue;
+	width:375px;
+}
+h1 {
+	text-align:center;
+	border:solid thin;
+}
+h2 {
+	text-align:center;
+}
 .holeInput, .holeInputLabel {
 	display:inline-block;
 	text-align:center;
@@ -26,6 +44,24 @@
 	display:inline-block;
 	width:60px;
 	text-align: center;
+}
+.dateOutputLabel, .dateOutput {
+	display:inline-block;
+	width:100px;
+	text-align:center;
+}
+.totalOutputLabel, .totalOutput {
+	display:inline-block;
+	width: 60px;
+	text-align: center;
+}
+.totalOutput {
+	width:30px;
+}
+.proOutputLabel, .proOutput {
+	display:inline-block;
+	text-align:center;
+	width:80px;
 }
 #frontNine, #backNine {
 	margin:10px 0px;
