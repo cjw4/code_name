@@ -11,7 +11,7 @@
 #outputScoresContainer {
 	display:inline-block;
 	border:solid blue;
-	width:375px;
+	width:400px;
 }
 h1 {
 	text-align:center;
@@ -50,6 +50,9 @@ h2 {
 	width:100px;
 	text-align:center;
 }
+.dateOuputLabel {
+	font-weight: bold;
+}
 .totalOutputLabel, .totalOutput {
 	display:inline-block;
 	width: 60px;
@@ -62,6 +65,9 @@ h2 {
 	display:inline-block;
 	text-align:center;
 	width:80px;
+}
+.deleteBtn, .showBtn {
+	display: inline-block;
 }
 #frontNine, #backNine {
 	margin:10px 0px;

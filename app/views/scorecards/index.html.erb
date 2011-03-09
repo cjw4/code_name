@@ -74,6 +74,8 @@
 		<span class="totalOutput"><%= scorecard.score %></span>
 		<span class="totalOutput"><%= scorecard.total %></span>
 		<span class="proOutput"><%= scorecard.pro_tees %></span>
+		<span class="deleteBtn"><%= button_to "Delete", scorecard, :method => :delete, :class => "deleteBtn" %></span>
+		<span class="showBtn"><%= button_to "Show", scorecard, :class => "showBtn" %></span>
 	</div><!-- end showScores div -->
 </span><!-- end outputScoresContainer div-->
 <% end  %>	
