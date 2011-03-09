@@ -1,4 +1,57 @@
 <h1>discGolf Score Manager</h1>
+
 <%= form_for(@scorecard) do |f| %>
+	<div id="frontNine">
+		<span class="holeInputLabel">1</span>
+		<span class="holeInputLabel">2</span>
+		<span class="holeInputLabel">3</span>
+		<span class="holeInputLabel">4</span>
+		<span class="holeInputLabel">5</span>
+		<span class="holeInputLabel">6</span>
+		<span class="holeInputLabel">7</span>
+		<span class="holeInputLabel">8</span>
+		<span class="holeInputLabel">9</span>
+	<div>
+		<span><%= f.text_field :hole1, :class => "holeInput", :value => "3" %></span>
+		<span><%= f.text_field :hole2, :class => "holeInput", :value => "3" %></span>
+		<span><%= f.text_field :hole3, :class => "holeInput", :value => "3" %></span>
+		<span><%= f.text_field :hole4, :class => "holeInput", :value => "3" %></span>
+		<span><%= f.text_field :hole5, :class => "holeInput", :value => "3" %></span>
+		<span><%= f.text_field :hole6, :class => "holeInput", :value => "3" %></span>
+		<span><%= f.text_field :hole7, :class => "holeInput", :value => "3" %></span>
+		<span><%= f.text_field :hole8, :class => "holeInput", :value => "3" %></span>
+		<span><%= f.text_field :hole9, :class => "holeInput", :value => "3" %></span>
+		<span class="proLabel"><%= f.check_box :pro_tees %> <span>Pro?</span></span>
+	</div>
+	</div><!-- end frontNine div-->
 	
+	<div id="backNine">
+		<span class="holeInputLabel">10</span>
+		<span class="holeInputLabel">11</span>
+		<span class="holeInputLabel">12</span>
+		<span class="holeInputLabel">13</span>
+		<span class="holeInputLabel">14</span>
+		<span class="holeInputLabel">15</span>
+		<span class="holeInputLabel">16</span>
+		<span class="holeInputLabel">17</span>
+		<span class="holeInputLabel">18</span>
+		<span class="totalInputLabel">Total</span>
+	<div>
+		<span><%= f.text_field :hole10, :class => "holeInput", :value => "3" %></span>
+		<span><%= f.text_field :hole11, :class => "holeInput", :value => "3" %></span>
+		<span><%= f.text_field :hole12, :class => "holeInput", :value => "3" %></span>
+		<span><%= f.text_field :hole13, :class => "holeInput", :value => "3" %></span>
+		<span><%= f.text_field :hole14, :class => "holeInput", :value => "3" %></span>
+		<span><%= f.text_field :hole15, :class => "holeInput", :value => "3" %></span>
+		<span><%= f.text_field :hole16, :class => "holeInput", :value => "3" %></span>
+		<span><%= f.text_field :hole17, :class => "holeInput", :value => "3" %></span>
+		<span><%= f.text_field :hole18, :class => "holeInput", :value => "3" %></span>
+		<%= f.text_field :score, :size => "2", :class => "totalInput", :value => "E" %>
+		<%= f.text_field :total, :size => "2", :class => "totalInput", :value => "54" %>
+	</div>	
+	</div><!-- end backNine div-->
+	
+	
+	<div><%= f.submit :class => "addScoreBtn", :value => "Log Score" %></div>
+
 <% end  %>

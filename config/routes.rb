@@ -1,9 +1,5 @@
 DiscGolf::Application.routes.draw do
-  get "scorecards/index"
-
-  get "scorecards/new"
-
-  get "scorecards/create"
+  resources :scorecards
 
   root :to => "scorecards#index"
   

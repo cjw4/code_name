@@ -2,3 +2,31 @@
 	width:800px;
 	margin: 0 auto;
 }
+.holeInput, .holeInputLabel {
+	display:inline-block;
+	text-align:center;
+}
+.holeInput {
+	width:20px;
+}
+.holeInputLabel {
+	width:26px;
+}
+.totalInput, .totalInputLabel {
+	display:inline-block;
+	text-align:center;
+}
+.totalInput {
+	width:26px;
+}
+.totalInputLabel {
+	width:60px;
+}
+.proLabel {
+	display:inline-block;
+	width:60px;
+	text-align: center;
+}
+#frontNine, #backNine {
+	margin:10px 0px;
+}
