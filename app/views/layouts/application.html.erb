@@ -8,7 +8,22 @@
 </head>
 <body>
 <div id="wrapper">
+  <div id="header">
+	<%= image_tag("playElver_header.png") %>
+	<ul>
+		<li>My playElver</li>
+		<li>LeaderBoards</li>
+		<li></li>
+	</ul>
+  </div><!-- end header div-->
   <%= yield %>
-</div>
+  <div id="footer">
+	<p>playElver was developed by Chris Walker</p>
+  	<ul>
+		<li>About</li>
+		<li>Contact</li>
+	</ul>
+  </div>
+</div><!-- end wrapper div-->
 </body>
 </html>
