@@ -1,70 +1,129 @@
+body {
+	background:#E3E3E3;
+}
 #wrapper {
-	width:800px;
+	width:920px;
 	margin: 0 auto;
 }
 #scorecardContainer {
 	display:inline-block;
-	border:solid green;
-	width: 375px;
+	border:solid #C5C5C5;
+	background: #FFF;
+	width: 400px;
 	float:left;
+	padding:5px 10px;
+	margin-right:10px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
 }
 #outputScoresContainer {
 	display:inline-block;
-	border:solid blue;
-	width:410px;
+	border:solid #C5C5C5;
+	background: #FFF;
+	padding:10px;
+	width:450px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
 }
 h1 {
 	text-align:center;
 	border:solid thin;
+	font: normal 35px/100% Verdana, Tahoma, sans-serif;
 }
 h2 {
 	text-align:center;
+	font: normal 25px/100% Verdana, Tahoma, sans-serif;
+}
+input[type="text"] {
+	padding:2px 4px;
+	margin: 5px 0px;
+	border: solid 1px #C5C5C5;
+	font: normal 15px/100% Verdana, Tahoma, sans-serif;
+	box-shadow: rgba(0,0,0, 0.1) 0px 0px 2px;  
+ 	-moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 2px;  
+ 	-webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 2px;
+	background: -webkit-gradient(linear, left top, left 25, from(#EEEEEE), to(#FFFFFF));  
+	background: -moz-linear-gradient(top, #EEEEEE, #FFFFFF 25px);
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+input[type="submit"].addScoreBtn {
+	height:30px;
+	margin:1px 20px 0px 0px;
+	padding: 5px 9px;
+	background: #347C17;
+	font: normal 16px/100% Helvetica, Tahoma, sans-serif;
+	color: #E9E9E9;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
 }
 .holeInput, .holeInputLabel {
 	display:inline-block;
 	text-align:center;
+	font: normal 15px/100% Verdana, Tahoma, sans-serif;
 }
 .holeInput {
 	width:20px;
 }
 .holeInputLabel {
-	width:26px;
+	width:30px;
+	color: #666;
 }
 .totalInput, .totalInputLabel {
 	display:inline-block;
 	text-align:center;
+	font: normal 15px/100% Verdana, Tahoma, sans-serif;
 }
 .totalInput {
 	width:26px;
 }
 .totalInputLabel {
-	width:60px;
+	width:75px;
 }
 .proLabel {
+	font: normal 16px/100% Verdana, Tahoma, sans-serif;
 	display:inline-block;
-	width:60px;
+	width:80px;
 	text-align: center;
 }
 .dateOutputLabel, .dateOutput {
+	border:solid thin;
 	display:inline-block;
 	width:150px;
 	text-align:center;
 }
-.dateOuputLabel {
-	font-weight: bold;
+.dateOutputLabel {
+	font: bold 18px/100% Verdana, Tahoma, sans-serif;
+	padding:5px 0px;
 }
 .totalOutputLabel, .totalOutput {
+	border:solid thin green;
 	display:inline-block;
-	width: 60px;
+	width: 66px;
 	text-align: center;
+	margin: 5px 0px;
 }
 .totalOutput {
 	width:30px;
 }
+.totalOutputLabel {
+	font: bold 18px/100% Verdana, Tahoma, sans-serif;
+	padding:5px 0px;	
+}
 .proOutputLabel, .proOutput {
+	border:solid thin yellow;
 	display:inline-block;
 	text-align:center;
-	width:80px;
+	width:100px;
+	margin: 5px 0px;
+}
+.proOutputLabel {
+	font: bold 18px/100% Verdana, Tahoma, sans-serif;
+	padding:5px 0px;
 }
 .deleteBtn, .showBtn {
 	display: inline-block;

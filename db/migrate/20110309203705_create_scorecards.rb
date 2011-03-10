@@ -1,7 +1,7 @@
 class CreateScorecards < ActiveRecord::Migration
   def self.up
     create_table :scorecards do |t|
-      t.integer :score
+      t.string :score
       t.integer :total
 
       t.timestamps

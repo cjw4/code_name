@@ -1,6 +1,7 @@
 class ScorecardsController < ApplicationController
   
   def index
+    @title = "Your Rounds"
     @date = Time.now
     @scorecard = Scorecard.new
     @scorecards = Scorecard.all
