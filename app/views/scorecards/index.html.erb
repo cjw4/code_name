@@ -52,7 +52,7 @@
 	</div>	
 	</div><!-- end backNine div-->
 	
-	
+	<%= f.hidden_field :date, :value => @date.strftime("%B %d, %Y") %>
 	<div><%= f.submit :class => "addScoreBtn", :value => "Log Score" %></div>
 </span><!-- end scorecardContainer div-->
 
@@ -71,7 +71,7 @@
 <div id="showScores">
 	<% @scorecards.each do |scorecard| %>
 	
-		<span class="dateOutput">Date here</span>
+		<span class="dateOutput"><%= scorecard.date %></span>
 		<span class="totalOutput"><%= scorecard.score %></span>
 		<span class="totalOutput"><%= scorecard.total %></span>
 		<span class="proOutput"><%= scorecard.pro_tees %></span>

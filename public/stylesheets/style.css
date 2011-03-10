@@ -11,7 +11,7 @@
 #outputScoresContainer {
 	display:inline-block;
 	border:solid blue;
-	width:400px;
+	width:410px;
 }
 h1 {
 	text-align:center;
@@ -47,7 +47,7 @@ h2 {
 }
 .dateOutputLabel, .dateOutput {
 	display:inline-block;
-	width:100px;
+	width:150px;
 	text-align:center;
 }
 .dateOuputLabel {

@@ -1,6 +1,7 @@
 class ScorecardsController < ApplicationController
   
   def index
+    @date = Time.now
     @scorecard = Scorecard.new
     @scorecards = Scorecard.all
     
