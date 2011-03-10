@@ -71,6 +71,8 @@ input[type="submit"].deleteBtn {
 	font: normal 12px/100% Helvetica, Tahoma, sans-serif;
 	background:#E41B17;
 	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
 	display:inline-block;
 	margin: 0px 5px;
 	color: #E9E9E9;
@@ -117,7 +119,7 @@ input[type="submit"].deleteBtn {
 .totalOutputLabel, .totalOutput {
 	font: normal 15px/100% Verdana, Tahoma, sans-serif;
 	display:inline-block;
-	width: 66px;
+	width: 64px;
 	text-align: center;
 	margin: 5px 0px;
 }
@@ -133,7 +135,7 @@ input[type="submit"].deleteBtn {
 }
 .totalOutputLabel {
 	font: bold 18px/100% Verdana, Tahoma, sans-serif;
-	padding:5px 0px;	
+	padding:5px 20px 5px 0px;	
 }
 .proOutputLabel, .proOutput {
 	font: normal 15px/100% Verdana, Tahoma, sans-serif;
@@ -169,6 +171,7 @@ input[type="submit"].deleteBtn {
 	background: -webkit-gradient(linear, left top, left 25, from(#EEEEEE), to(#FFFFFF));  
 	background: -moz-linear-gradient(top, #EEEEEE, #FFFFFF 25px);
 }
+
 #frontNine, #backNine {
 	margin:10px 0px;
 }

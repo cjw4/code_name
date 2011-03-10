@@ -75,13 +75,14 @@
 		<span class="dateOutput"><%= scorecard.date %></span>
 		<span class="totalOutput"><%= scorecard.score %></span>
 		<span class="totalOutput"><%= scorecard.total %></span>
+		<% if @scorecard_show.present? && scorecard.id == @scorecard_show.id %>
+			<span><%= link_to(image_tag("arrow-south.png", :width => "18"), scorecards_path) %></span>
+		<% else %>
+			<span><%= link_to(image_tag("arrow-west.png", :width => "18"), scorecard) %></span>
+		<% end %>
 		<span class="proOutput"><%= scorecard.pro_tees %></span>
 		<span class="deleteBtn"><%= button_to "x", scorecard, :method => :delete, :class => "deleteBtn" %></span>
-		<% if @scorecard_show.present? && scorecard.id == @scorecard_show.id %>
-			<span class="showBtn"><%= link_to "Hide", scorecards_path, :class => "showBtn" %></span>
-		<% else %>
-			<span class="showBtn"><%= link_to "Show", scorecard, :class => "showBtn" %></span>
-		<% end %>
+
 		<% if @scorecard_show.present? && scorecard.id == @scorecard_show.id %>
 			<div class="scorecardOutput">
 				<div>
