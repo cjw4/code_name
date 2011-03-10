@@ -1,15 +1,21 @@
 class ScorecardsController < ApplicationController
+  
   def index
     @scorecard = Scorecard.new
     @scorecards = Scorecard.all
+    
+    if params[:id].present?
+      @scorecard_show = Scorecard.find(params[:id])
+    end
+  
   end
   
+  
   def show
-    @scorecard = Scorecard.find(params[:id])
-    
-    redirect_to(:action => "index")
+      @show_scorecard = Scorecard.find(params[:id])
+      redirect_to(:action => "index", :id => @show_scorecard)
   end
-
+  
   def destroy
     @scorecard = Scorecard.find(params[:id])
     

@@ -68,18 +68,66 @@
 	<span class="proOutputLabel">Pro Tees?</span>
 </div>
 
-<% @scorecards.each do |scorecard| %>
-	<div id="showScores">
+<div id="showScores">
+	<% @scorecards.each do |scorecard| %>
+	
 		<span class="dateOutput">Date here</span>
 		<span class="totalOutput"><%= scorecard.score %></span>
 		<span class="totalOutput"><%= scorecard.total %></span>
 		<span class="proOutput"><%= scorecard.pro_tees %></span>
 		<span class="deleteBtn"><%= button_to "Delete", scorecard, :method => :delete, :class => "deleteBtn" %></span>
-		<span class="showBtn"><%= button_to "Show", scorecard, :class => "showBtn" %></span>
+		<% if @scorecard_show.present? && scorecard.id == @scorecard_show.id %>
+			<span class="showBtn"><%= link_to "Hide", scorecards_path, :class => "showBtn" %></span>
+		<% else %>
+			<span class="showBtn"><%= link_to "Show", scorecard, :class => "showBtn" %></span>
+		<% end %>
+		<% if @scorecard_show.present? && scorecard.id == @scorecard_show.id %>
+			<div class="scorecardOutput">
+				<div>
+					<span class="holeLabelOutput">1</span>
+					<span class="holeLabelOutput">2</span>
+					<span class="holeLabelOutput">3</span>
+					<span class="holeLabelOutput">4</span>
+					<span class="holeLabelOutput">5</span>
+					<span class="holeLabelOutput">6</span>
+					<span class="holeLabelOutput">7</span>
+					<span class="holeLabelOutput">8</span>
+					<span class="holeLabelOutput">9</span>
+					<span class="holeLabelOutput">10</span>
+					<span class="holeLabelOutput">11</span>
+					<span class="holeLabelOutput">12</span>
+					<span class="holeLabelOutput">13</span>
+					<span class="holeLabelOutput">14</span>
+					<span class="holeLabelOutput">15</span>
+					<span class="holeLabelOutput">16</span>
+					<span class="holeLabelOutput">17</span>
+					<span class="holeLabelOutput">18</span>
+				</div>
+				<div>
+					<span class="holeOutput"><%=  @scorecard_show.hole1 %></span>
+					<span class="holeOutput"><%=  @scorecard_show.hole2 %></span>
+					<span class="holeOutput"><%=  @scorecard_show.hole3 %></span>
+					<span class="holeOutput"><%=  @scorecard_show.hole4 %></span>
+					<span class="holeOutput"><%=  @scorecard_show.hole5 %></span>
+					<span class="holeOutput"><%=  @scorecard_show.hole6 %></span>
+					<span class="holeOutput"><%=  @scorecard_show.hole7 %></span>
+					<span class="holeOutput"><%=  @scorecard_show.hole8 %></span>
+					<span class="holeOutput"><%=  @scorecard_show.hole9 %></span>
+					<span class="holeOutput"><%=  @scorecard_show.hole10 %></span>
+					<span class="holeOutput"><%=  @scorecard_show.hole11 %></span>
+					<span class="holeOutput"><%=  @scorecard_show.hole12 %></span>
+					<span class="holeOutput"><%=  @scorecard_show.hole13 %></span>
+					<span class="holeOutput"><%=  @scorecard_show.hole14 %></span>
+					<span class="holeOutput"><%=  @scorecard_show.hole15 %></span>
+					<span class="holeOutput"><%=  @scorecard_show.hole16 %></span>
+					<span class="holeOutput"><%=  @scorecard_show.hole17 %></span>
+					<span class="holeOutput"><%=  @scorecard_show.hole18 %></span>
+				</div>
+			</div><!-- end scorecardOutput div-->	
+		<% end %>
+	<% end  %>
 	</div><!-- end showScores div -->
 </span><!-- end outputScoresContainer div-->
-<% end  %>	
-
 
 
 
