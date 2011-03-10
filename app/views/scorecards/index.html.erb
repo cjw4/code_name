@@ -76,7 +76,7 @@
 		<span class="totalOutput"><%= scorecard.score %></span>
 		<span class="totalOutput"><%= scorecard.total %></span>
 		<span class="proOutput"><%= scorecard.pro_tees %></span>
-		<span class="deleteBtn"><%= button_to "Delete", scorecard, :method => :delete, :class => "deleteBtn" %></span>
+		<span class="deleteBtn"><%= button_to "x", scorecard, :method => :delete, :class => "deleteBtn" %></span>
 		<% if @scorecard_show.present? && scorecard.id == @scorecard_show.id %>
 			<span class="showBtn"><%= link_to "Hide", scorecards_path, :class => "showBtn" %></span>
 		<% else %>
@@ -94,15 +94,6 @@
 					<span class="holeLabelOutput">7</span>
 					<span class="holeLabelOutput">8</span>
 					<span class="holeLabelOutput">9</span>
-					<span class="holeLabelOutput">10</span>
-					<span class="holeLabelOutput">11</span>
-					<span class="holeLabelOutput">12</span>
-					<span class="holeLabelOutput">13</span>
-					<span class="holeLabelOutput">14</span>
-					<span class="holeLabelOutput">15</span>
-					<span class="holeLabelOutput">16</span>
-					<span class="holeLabelOutput">17</span>
-					<span class="holeLabelOutput">18</span>
 				</div>
 				<div>
 					<span class="holeOutput"><%=  @scorecard_show.hole1 %></span>
@@ -114,6 +105,19 @@
 					<span class="holeOutput"><%=  @scorecard_show.hole7 %></span>
 					<span class="holeOutput"><%=  @scorecard_show.hole8 %></span>
 					<span class="holeOutput"><%=  @scorecard_show.hole9 %></span>
+				</div>
+				<div>
+					<span class="holeLabelOutput">10</span>
+					<span class="holeLabelOutput">11</span>
+					<span class="holeLabelOutput">12</span>
+					<span class="holeLabelOutput">13</span>
+					<span class="holeLabelOutput">14</span>
+					<span class="holeLabelOutput">15</span>
+					<span class="holeLabelOutput">16</span>
+					<span class="holeLabelOutput">17</span>
+					<span class="holeLabelOutput">18</span>
+				</div>
+				<div>
 					<span class="holeOutput"><%=  @scorecard_show.hole10 %></span>
 					<span class="holeOutput"><%=  @scorecard_show.hole11 %></span>
 					<span class="holeOutput"><%=  @scorecard_show.hole12 %></span>

@@ -22,10 +22,14 @@ body {
 	border:solid #C5C5C5;
 	background: #FFF;
 	padding:10px;
-	width:450px;
+	width:430px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
+}
+.scorecardOutput {
+	width:331px;
+	margin:10px auto;
 }
 h1 {
 	text-align:center;
@@ -61,6 +65,16 @@ input[type="submit"].addScoreBtn {
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 }
+input[type="submit"].deleteBtn {
+	height:20px;
+	padding: 2px 5px;
+	font: normal 12px/100% Helvetica, Tahoma, sans-serif;
+	background:#E41B17;
+	-webkit-border-radius: 10px;
+	display:inline-block;
+	margin: 0px 5px;
+	color: #E9E9E9;
+}
 .holeInput, .holeInputLabel {
 	display:inline-block;
 	text-align:center;
@@ -91,7 +105,7 @@ input[type="submit"].addScoreBtn {
 	text-align: center;
 }
 .dateOutputLabel, .dateOutput {
-	border:solid thin;
+	font: normal 15px/100% Verdana, Tahoma, sans-serif;
 	display:inline-block;
 	width:150px;
 	text-align:center;
@@ -101,21 +115,28 @@ input[type="submit"].addScoreBtn {
 	padding:5px 0px;
 }
 .totalOutputLabel, .totalOutput {
-	border:solid thin green;
+	font: normal 15px/100% Verdana, Tahoma, sans-serif;
 	display:inline-block;
 	width: 66px;
 	text-align: center;
 	margin: 5px 0px;
 }
 .totalOutput {
-	width:30px;
+	width:28px;
+	border: solid 1px #C5C5C5;
+	padding:3px 0px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background: -webkit-gradient(linear, left top, left 25, from(#EEEEEE), to(#FFFFFF));  
+	background: -moz-linear-gradient(top, #EEEEEE, #FFFFFF 25px);
 }
 .totalOutputLabel {
 	font: bold 18px/100% Verdana, Tahoma, sans-serif;
 	padding:5px 0px;	
 }
 .proOutputLabel, .proOutput {
-	border:solid thin yellow;
+	font: normal 15px/100% Verdana, Tahoma, sans-serif;
 	display:inline-block;
 	text-align:center;
 	width:100px;
@@ -129,9 +150,24 @@ input[type="submit"].addScoreBtn {
 	display: inline-block;
 }
 .holeOutput, .holeLabelOutput {
+	font: normal 15px/100% Verdana, Tahoma, sans-serif;
+	color: #666;
 	display:inline-block;
-	width:17px;
+	width:31px;
 	text-align:center;
+	margin-bottom:3px;
+}
+.holeOutput {
+	border: solid 1px #C5C5C5;
+	color:#000;
+	width:29px;
+	margin-bottom:4px;
+	padding:3px 0px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background: -webkit-gradient(linear, left top, left 25, from(#EEEEEE), to(#FFFFFF));  
+	background: -moz-linear-gradient(top, #EEEEEE, #FFFFFF 25px);
 }
 #frontNine, #backNine {
 	margin:10px 0px;
