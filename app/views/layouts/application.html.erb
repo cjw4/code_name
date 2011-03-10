@@ -13,15 +13,15 @@
 	<ul>
 		<li>My playElver</li>
 		<li>LeaderBoards</li>
-		<li></li>
+		<li><%= link_to "Scorecard", scorecards_path %></li>
 	</ul>
   </div><!-- end header div-->
   <%= yield %>
   <div id="footer">
 	<p>playElver was developed by Chris Walker</p>
   	<ul>
-		<li>About</li>
-		<li>Contact</li>
+		<li><%= link_to "About", about_path %></li>
+		<li><%= link_to "Contact", contact_path %></li>
 	</ul>
   </div>
 </div><!-- end wrapper div-->
