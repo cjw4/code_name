@@ -1,6 +1,7 @@
 DiscGolf::Application.routes.draw do
   
   resources :users
+  resources :user_sessions
   resources :scorecards
   
   match 'about' => 'pages#about'
