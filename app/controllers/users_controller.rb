@@ -8,7 +8,7 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
     if @user.save
       flash[:notice] = "Successfully created account!"
-      redirect_to scorecard_url
+      redirect_to({:controller => "scorecards", :action => "index" })
     else
       render :action => "new"
     end

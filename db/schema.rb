@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(:version => 20110311204921) do
 
   create_table "scorecards", :force => true do |t|
-    t.integer  "score"
+    t.string   "score"
     t.integer  "total"
     t.datetime "created_at"
     t.datetime "updated_at"
