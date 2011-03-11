@@ -4,22 +4,22 @@ class ScorecardsController < ApplicationController
     @title = "Your Rounds"
     @date = Time.now
     @scorecard = Scorecard.new
-    @scorecards = Scorecard.all
+    @scorecards = current_user.scorecards
     
     if params[:id].present?
-      @scorecard_show = Scorecard.find(params[:id])
+      @scorecard_show = current_user.scorecards.find(params[:id])
     end
   
   end
   
   
   def show
-      @show_scorecard = Scorecard.find(params[:id])
+      @show_scorecard = current_user.scorecards.find(params[:id])
       redirect_to(:action => "index", :id => @show_scorecard)
   end
   
   def destroy
-    @scorecard = Scorecard.find(params[:id])
+    @scorecard = current_user.scorecards.find(params[:id])
     
     if @scorecard.destroy
       redirect_to(:action => "index")
@@ -27,7 +27,7 @@ class ScorecardsController < ApplicationController
   end
 
   def create
-    @scorecard = Scorecard.new(params[:scorecard])
+    @scorecard = current_user.scorecards.create(params[:scorecard])
     
     if @scorecard.save
       redirect_to(:action => "index")

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110311161319) do
+ActiveRecord::Schema.define(:version => 20110311204921) do
 
   create_table "scorecards", :force => true do |t|
     t.integer  "score"
@@ -37,6 +37,12 @@ ActiveRecord::Schema.define(:version => 20110311161319) do
     t.integer  "hole18"
     t.boolean  "pro_tees"
     t.string   "date"
+    t.integer  "user_id"
+  end
+
+  create_table "user_sessions", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "users", :force => true do |t|
