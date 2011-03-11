@@ -12,10 +12,17 @@
 	<%= image_tag("playElver_header.png") %>
 	<ul>
 		<li>LeaderBoards</li>
-		<li><%= link_to "Sign In", new_user_session_url %></li>
+		<% if current_user %>
+			<li><%= link_to "Sign Out", { :controller => "user_sessions", :action => "destroy" } %></li>
+		<% else %>
+			<li><%= link_to "Sign In", signin_path %></li>
+		<% end %>
 		<li><%= link_to "Scorecard", scorecards_path %></li>
 	</ul>
   </div><!-- end header div-->
+  <% flash.each do |msg| %>
+  	<%= content_tag :div, msg %>
+  <% end  %> 
   <%= yield %>
   <div id="footer">
 	<ul>

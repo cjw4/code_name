@@ -1,8 +1,12 @@
 DiscGolf::Application.routes.draw do
   
+  get "user_sessions/destroy"
+  
   resources :users
   resources :user_sessions
   resources :scorecards
+  
+  match 'signin' => 'user_sessions#new'
   
   match 'about' => 'pages#about'
   match 'contact' => 'pages#contact'
