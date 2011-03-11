@@ -70,3 +70,11 @@ a:hover {
 #footerRight {
 	float:right;
 }
+
+.pagesContainer {
+	width:500px;
+	margin:0px 0px 0px 80px;
+	padding: 10px;
+	background: #FFF;
+	border:solid thin;
+}
