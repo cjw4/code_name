@@ -1,0 +1,20 @@
+<%= form_for(@user) do |f| %>
+	<% if @user.errors.any? %>
+	  <% @user.errors.full_messages.each do |msg| %>
+		<li><%= msg %></li>
+	  <% end %>
+	
+	<% end %>
+	
+	
+	<div>Name</div>
+	<div><%= f.text_field :first_name %></div>
+	<div><%= f.text_field :last_name %></div>
+	<div>Email</div>
+	<div><%= f.text_field :email %></div>
+	<div>Password</div>
+	<div><%= f.password_field :password %></div>
+	<div>Confirm Password</div>
+	<div><%= f.password_field :password_confirmation %></div>
+	<div><%= f.submit :value => "Create Account" %></div>
+<% end %>
