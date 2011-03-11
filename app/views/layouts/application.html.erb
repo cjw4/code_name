@@ -18,12 +18,17 @@
   </div><!-- end header div-->
   <%= yield %>
   <div id="footer">
-	<p>playElver was developed by Chris Walker</p>
-  	<ul>
+	<ul>
 		<li><%= link_to "About", about_path %></li>
 		<li><%= link_to "Contact", contact_path %></li>
 		<li><%= link_to "Home", root_path %></li>
 	</ul>
+	<span id="footerRight">
+	<p>playElver was developed by Chris Walker using:</p>
+	<%= image_tag "html5_logo.png", :height => "30" %>
+	<%= image_tag "jquery_logo.png", :height => "30"%>
+  	<%= image_tag "rails.png", :height => "30" %>
+	</span>
   </div>
 </div><!-- end wrapper div-->
 </body>

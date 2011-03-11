@@ -42,18 +42,20 @@ a:hover {
 }
 
 #footer {
-	height: 50px;
+	height: 60px;
 	width:100%;
 	background:#FFF;
 	margin:30px 0px 0px 0px;
 	padding:10px;
 }
 #footer p {
-	float:left;
+	text-align:center;
+	font: normal 11px/100% Helvetica, Tahoma, sans-serif;
+	margin:5px 0px;
 }
 #footer ul {
 	list-style:none;
-	float:right;
+	float:left;
 }
 #footer ul li {
 	display:inline;
@@ -61,4 +63,10 @@ a:hover {
 }
 #footer ul li a {
 	
+}
+#footer img {
+	padding:0px 5px;
+}
+#footerRight {
+	float:right;
 }
