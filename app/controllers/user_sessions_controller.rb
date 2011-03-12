@@ -10,7 +10,7 @@ class UserSessionsController < ApplicationController
     @user_session = UserSession.new(params[:user_session])
     if @user_session.save
       flash[:notice] = "Sign In Successful!"
-      redirect_to root_url
+      redirect_to scorecards_path
     else
       render :action => :new
     end
