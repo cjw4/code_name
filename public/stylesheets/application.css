@@ -72,15 +72,32 @@ a:hover {
 }
 .pagesContainer {
 	width:500px;
+	height:200px;
 	margin:0px 0px 0px 80px;
 	padding: 10px;
 	background: #FFF;
-	border:solid thin;
+	border:solid #E9E9E9 thin;
 }
 
 /*--- SignIn/SignUp Styling ---*/
-
-input[type="password"] {
+#signUpInputLeft {
+	display:inline-block;
+	width: 230px;
+	margin-left: 40px;
+	float:left;
+}
+#signUpInputRight {
+	margin-top: 20px;
+	width:200px;
+	float:left;
+}
+#signInContainer {
+	width:170px;
+	margin:15px auto;
+}
+.formInput {
+	padding:4px 7px;
+	width:150px;
 	margin: 5px 0px;
 	border: solid 1px #C5C5C5;
 	font: normal 15px/100% Verdana, Tahoma, sans-serif;
@@ -93,11 +110,29 @@ input[type="password"] {
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 }
-.formInput {
-	padding:4px 7px;
-	width:150px;
-}
 .formLabel {
 	font: bold 16px/100% Helvetica, Tahoma, sans-serif;
 	margin: 5px 10px;
+}
+input[type="submit"]#createAccountBtn {
+	height:30px;
+	margin:15px 0px 0px 15px;
+	padding: 5px 9px;
+	background: #C7A317;
+	font: bold 15px/100% Helvetica, Tahoma, sans-serif;
+	color: #E9E9E9;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+input[type="submit"]#signInBtn {
+	height:30px;
+	margin:15px 0px 0px 45px;
+	padding: 5px 9px;
+	background: #C7A317;
+	font: bold 15px/100% Helvetica, Tahoma, sans-serif;
+	color: #E9E9E9;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
 }

@@ -1,13 +1,23 @@
 <%= form_for(@user_session) do |f| %>
+  
+  
   <% if @user_session.errors.any? %>
   	<% @user_session.errors.full_messages.each do |msg| %>
 	  <li><%= msg %></li>
 	<% end %>
   <% end %>
   
-  <div>Email</div>
-  <div><%= f.text_field :email %></div>
-  <div>Password</div>
-  <div><%= f.password_field :password %></div>
-  <div><%= f.submit %></div>
+<div class="pagesContainer">
+
+<div id="signInContainer">
+	
+  <div class="formLabel">Email</div>
+  <div><%= f.text_field :email, :class => "formInput" %></div>
+  <div class="formLabel">Password</div>
+  <div><%= f.password_field :password, :class => "formInput" %></div>
+  <div><%= f.submit :value => "Sign In", :id => "signInBtn"  %></div>
+
+</div>
+</div>
+
 <% end  %>	

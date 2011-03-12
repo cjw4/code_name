@@ -35,7 +35,7 @@ h2 {
 	text-align:center;
 	font: normal 25px/100% Verdana, Tahoma, sans-serif;
 }
-input[type="text"] {
+input[type="text"].holeInput {
 	margin: 5px 0px;
 	border: solid 1px #C5C5C5;
 	font: normal 15px/100% Verdana, Tahoma, sans-serif;

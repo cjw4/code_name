@@ -9,16 +9,21 @@
 	<% end %>
 	
 	
-	<div class="formLabel">Name</div>
-	<div><%= f.text_field :first_name, :class => "formInput" %></div>
-	<div><%= f.text_field :last_name, :class => "formInput" %></div>
-	<div class="formLabel">Email</div>
-	<div><%= f.text_field :email, :class => "formInput" %></div>
-	<div class="formLabel">Password</div>
-	<div><%= f.password_field :password, :class => "formInput" %></div>
-	<div class="formLabel">Confirm Password</div>
-	<div><%= f.password_field :password_confirmation, :class => "formInput" %></div>
-	<div><%= f.submit :value => "Create Account" %></div>
+	<div id="signUpInputLeft">
+		<div class="formLabel">Name</div>
+		<div><%= f.text_field :first_name, :class => "formInput" %></div>
+		<div><%= f.text_field :last_name, :class => "formInput" %></div>
+		<div class="formLabel">Email</div>
+		<div><%= f.text_field :email, :class => "formInput" %></div>
+	</div>
+	
+	<div id="signUpInputRight">
+		<div class="formLabel">Password</div>
+		<div><%= f.password_field :password, :class => "formInput" %></div>
+		<div class="formLabel">Confirm Password</div>
+		<div><%= f.password_field :password_confirmation, :class => "formInput" %></div>
+		<div><%= f.submit :value => "Create Account", :id => "createAccountBtn" %></div>
+	</div>
 
 <% end %>
 </div>
