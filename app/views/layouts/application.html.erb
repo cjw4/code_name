@@ -14,16 +14,20 @@
 		<% if current_user %>
 			<li><%= link_to "My playElver", scorecards_path %></li>
 			<li><%= link_to "Sign Out", { :controller => "user_sessions", :action => "destroy" } %></li>
+			<li>Welcome, <%= current_user.first_name %></li>
 		<% else %>
 			<li><%= link_to "Sign In", signin_path %></li>
 			<li><%= link_to "Create Account", new_user_url %></li>
 		<% end %>
 	</ul>
   </div><!-- end header div-->
-  <% flash.each do |msg| %>
-  	<%= content_tag :div, msg %>
+  
+  <% flash.each do |key, msg| %>
+  	<div class="flash"><%= msg %></div>
   <% end  %> 
+  
   <%= yield %>
+
   <div id="footer">
 	<ul>
 		<li><%= link_to "About", about_path %></li>
@@ -31,12 +35,14 @@
 		<li><%= link_to "Home", root_path %></li>
 	</ul>
 	<span id="footerRight">
-	<p>playElver was developed by Chris Walker using:</p>
-	<%= image_tag "html5_logo.png", :height => "30" %>
-	<%= image_tag "jquery_logo.png", :height => "30"%>
-  	<%= image_tag "rails.png", :height => "30" %>
+		<p>playElver was developed by Chris Walker using:</p>
+		<%= image_tag "html5_logo.png", :height => "30" %>
+		<%= image_tag "jquery_logo.png", :height => "30"%>
+	  	<%= image_tag "rails.png", :height => "30" %>
 	</span>
   </div>
+
+
 </div><!-- end wrapper div-->
 </body>
 </html>

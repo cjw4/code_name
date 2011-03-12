@@ -7,7 +7,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(params[:user])
     if @user.save
-      flash[:notice] = "Successfully created account!"
+      flash[:notice] = "You've created a playElver account successfully"
       redirect_to({:controller => "scorecards", :action => "index" })
     else
       render :action => "new"

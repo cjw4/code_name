@@ -78,6 +78,14 @@ a:hover {
 	background: #FFF;
 	border:solid #E9E9E9 thin;
 }
+.flash {
+	border: #E9E9E9 thin;;
+	padding: 10px;
+	margin:10px;
+	background: #4AA02C;
+	text-align: center;
+	font: normal 20px/100% Helvetica, Tahoma, sans-serif;
+}
 
 /*--- SignIn/SignUp Styling ---*/
 #signUpInputLeft {
